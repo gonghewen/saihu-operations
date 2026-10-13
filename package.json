@@ -1,0 +1,16 @@
+{
+  "name": "saihu-operations",
+  "version": "1.0.0",
+  "description": "赛狐运营静态演示后台（静态文件 + 简单 Node 静态服务器）",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "serve": "node server.js"
+  },
+  "keywords": ["saihu","operations","dashboard"],
+  "author": "gonghewen",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
