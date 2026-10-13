@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>赛狐运营管理后台</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">S</div>
+          <div>
+            <div class="brand-title">赛狐运营</div>
+            <div class="brand-subtitle">管理后台</div>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <button class="nav-item active">概览</button>
+          <button class="nav-item">订单</button>
+          <button class="nav-item">商品</button>
+          <button class="nav-item">用户</button>
+          <button class="nav-item">财务</button>
+          <button class="nav-item">设置</button>
+        </nav>
+
+        <div class="sidebar-card">
+          <div class="card-label">本月目标</div>
+          <div class="progress-title">￥128,500</div>
+          <div class="progress-bar">
+            <span style="width: 78%"></span>
+          </div>
+          <div class="mini-meta">
+            <span>已完成 78%</span>
+            <span>+12.4%</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <div class="eyebrow">运营数据</div>
+            <h1>今日概览</h1>
+          </div>
+          <div class="topbar-actions">
+            <button class="ghost-btn">导出</button>
+            <button class="primary-btn">发布</button>
+          </div>
+        </header>
+
+        <section class="stats-grid">
+          <article class="stat-card accent-blue">
+            <div class="stat-head">
+              <span>GMV</span>
+              <span class="chip positive">+8.2%</span>
+            </div>
+            <div class="stat-value">￥384,200</div>
+            <div class="stat-foot">较昨日提升</div>
+          </article>
+
+          <article class="stat-card accent-green">
+            <div class="stat-head">
+              <span>订单数</span>
+              <span class="chip positive">+5.7%</span>
+            </div>
+            <div class="stat-value">12,894</div>
+            <div class="stat-foot">已确认订单</div>
+          </article>
+
+          <article class="stat-card accent-orange">
+            <div class="stat-head">
+              <span>转化率</span>
+              <span class="chip negative">-0.8%</span>
+            </div>
+            <div class="stat-value">4.66%</div>
+            <div class="stat-foot">渠道质量稳定</div>
+          </article>
+
+          <article class="stat-card accent-purple">
+            <div class="stat-head">
+              <span>新客数</span>
+              <span class="chip positive">+10.4%</span>
+            </div>
+            <div class="stat-value">3,298</div>
+            <div class="stat-foot">新增用户</div>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <div class="panel chart-panel">
+            <div class="panel-header">
+              <div>
+                <div class="eyebrow">趋势</div>
+                <h2>订单收入趋势</h2>
+              </div>
+              <button class="ghost-btn small">近 7 天</button>
+            </div>
+
+            <div class="bars" aria-label="收入趋势柱状图">
+              <div class="bar-group"><span class="bar" style="height: 38%"></span><label>Mon</label></div>
+              <div class="bar-group"><span class="bar" style="height: 52%"></span><label>Tue</label></div>
+              <div class="bar-group"><span class="bar" style="height: 61%"></span><label>Wed</label></div>
+              <div class="bar-group"><span class="bar" style="height: 49%"></span><label>Thu</label></div>
+              <div class="bar-group"><span class="bar" style="height: 72%"></span><label>Fri</label></div>
+              <div class="bar-group"><span class="bar" style="height: 68%"></span><label>Sat</label></div>
+              <div class="bar-group"><span class="bar" style="height: 88%"></span><label>Sun</label></div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <div>
+                <div class="eyebrow">实时</div>
+                <h2>复购率</h2>
+              </div>
+            </div>
+
+            <div class="ring-wrap">
+              <div class="ring">
+                <div class="ring-inner">
+                  <strong>68%</strong>
+                  <span>健康</span>
+                </div>
+              </div>
+            </div>
+            <ul class="mini-list">
+              <li><span>新增会员</span><strong>1,204</strong></li>
+              <li><span>复购用户</span><strong>823</strong></li>
+              <li><span>留存率</span><strong>72.4%</strong></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="lower-grid">
+          <div class="panel">
+            <div class="panel-header">
+              <div>
+                <div class="eyebrow">任务</div>
+                <h2>待办事项</h2>
+              </div>
+              <button class="ghost-btn small">查看全部</button>
+            </div>
+
+            <ul class="task-list">
+              <li>
+                <span class="dot green"></span>
+                <div>
+                  <strong>优化新品首屏</strong>
+                  <small>今日 16:00 前完成</small>
+                </div>
+                <span class="pill">高优先级</span>
+              </li>
+              <li>
+                <span class="dot orange"></span>
+                <div>
+                  <strong>审核广告素材</strong>
+                  <small>今日 18:00 前完成</small>
+                </div>
+                <span class="pill neutral">待审核</span>
+              </li>
+              <li>
+                <span class="dot blue"></span>
+                <div>
+                  <strong>更新推荐文案</strong>
+                  <small>明日执行</small>
+                </div>
+                <span class="pill info">计划中</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <div>
+                <div class="eyebrow">用户</div>
+                <h2>增长榜单</h2>
+              </div>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>渠道</th>
+                  <th>用户</th>
+                  <th>增长</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>搜索广告</td>
+                  <td>4,198</td>
+                  <td class="up">+18%</td>
+                </tr>
+                <tr>
+                  <td>内容营销</td>
+                  <td>3,502</td>
+                  <td class="up">+12%</td>
+                </tr>
+                <tr>
+                  <td>社交推荐</td>
+                  <td>2,814</td>
+                  <td class="up">+9%</td>
+                </tr>
+                <tr>
+                  <td>老客召回</td>
+                  <td>1,674</td>
+                  <td class="up">+6%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
